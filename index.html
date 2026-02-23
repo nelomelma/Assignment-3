@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">Job Application Tracker</h1>
+    </header>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+      <div class="stat">
+        <p class="stat-label">Total</p>
+        <p class="stat-value" id="totalCount">0</p>
+      </div>
+
+      <div class="stat">
+        <p class="stat-label">Interview</p>
+        <p class="stat-value stat-green" id="interviewCount">0</p>
+      </div>
+
+      <div class="stat">
+        <p class="stat-label">Rejected</p>
+        <p class="stat-value stat-red" id="rejectedCount">0</p>
+      </div>
+    </section>
+
+    <!-- Available Jobs -->
+    <section class="jobs">
+      <div class="jobs-head">
+        <div>
+          <h2 class="section-title">Available Jobs</h2>
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-tab="all" type="button">All</button>
+            <button class="tab" data-tab="interview" type="button">Interview</button>
+            <button class="tab" data-tab="rejected" type="button">Rejected</button>
+          </div>
+        </div>
+
+        <div class="jobs-count">
+          <span id="tabCount">0</span> jobs
+        </div>
+      </div>
+
+      <!-- Cards Container (event delegation here) -->
+      <div id="cardsWrap" class="cards-wrap">
+        <!-- JS renders cards here -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty hidden">
+        <div class="empty-icon" aria-hidden="true">
+          <!-- simple icon -->
+          <svg width="58" height="58" viewBox="0 0 24 24" fill="none">
+            <path d="M7 7h10M7 11h10M7 15h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M6 3h12a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2-3-2V5a2 2 0 0 1 2-2Z"
+              stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>No Jobs Available</h3>
+        <p>Try selecting a different tab or update a job status.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
