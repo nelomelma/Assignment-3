@@ -1,9 +1,9 @@
 What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 =
-getElementById() is used to select a single element by its unique ID
-getElementsByClassName → multiple elements by class
-querySelector() selects the first element that matches a CSS selector
-querySelectorAll- all matching elements
+getElementById() is used to select a single element by its unique ID.
+getElementsByClassName → multiple elements by class.
+querySelector() selects the first element that matches a CSS selector.
+querySelectorAll- all matching elements.
 
 
 How do you create and insert a new element into the DOM?
@@ -26,6 +26,6 @@ This is useful because it reduces the number of event listeners, improves perfor
 
 What is the difference between preventDefault() and stopPropagation() methods?
 = 
-preventDefault - stops default browser action
-stopPropagation - stops the event from bubbling to the parent elements
+preventDefault - stops the default browser action.
+stopPropagation - stops the event from bubbling up to parent elements.
 
