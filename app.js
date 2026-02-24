@@ -1,4 +1,4 @@
-// ====== Data (minimum 8 cards) ======
+//Data(minimum 8 cards)
 const jobs = [
   {
     id: 1,
@@ -90,7 +90,7 @@ const jobs = [
   }
 ];
 
-// ====== Elements ======
+//Elements
 const totalCountEl = document.getElementById("totalCount");
 const interviewCountEl = document.getElementById("interviewCount");
 const rejectedCountEl = document.getElementById("rejectedCount");
@@ -100,9 +100,9 @@ const cardsWrap = document.getElementById("cardsWrap");
 const emptyState = document.getElementById("emptyState");
 const tabButtons = document.querySelectorAll(".tab");
 
-let activeTab = "all"; // all | interview | rejected
+let activeTab = "all"; // all, interview, rejected
 
-// ====== Helpers ======
+//Helpers
 function getCounts() {
   const total = jobs.length;
   const interview = jobs.filter(j => j.status === "interview").length;
@@ -206,7 +206,7 @@ function setActiveTab(tabName) {
   renderCards();
 }
 
-// ====== Events ======
+//Events
 
 // Tab switching
 tabButtons.forEach(btn => {
@@ -244,5 +244,5 @@ cardsWrap.addEventListener("click", (e) => {
   renderCards();
 });
 
-// ====== Initial Render ======
+//Initial Render
 setActiveTab("all");
