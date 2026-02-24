@@ -2,13 +2,13 @@
 const jobs = [
   {
     id: 1,
-    companyName: "StartupXYZ",
-    position: "Full Stack Engineer",
+    companyName: "Mobile First Crop",
+    position: "React Native Developer",
     location: "Remote",
     type: "Full-time",
-    salary: "$120,000 - $160,000",
+    salary: "$130,000 - $175,000",
     description:
-      "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
+      "Build cross-platform mobile applications using Rect Native. Work on products used by millions of users worldwide",
     status: "not_applied"
   },
   {
@@ -68,7 +68,7 @@ const jobs = [
   },
   {
     id: 7,
-    companyName: "Mobile First Corp",
+    companyName: "Mobile Second Corp",
     position: "React Native Developer",
     location: "Remote",
     type: "Full-time",
